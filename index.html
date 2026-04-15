@@ -49,16 +49,16 @@
       </section>
       <section> 
         <textarea>This is a survey if you are just joining. This is a meeting to brainstorm the app for the group project.</textarea>
-      <fieldset>
-      <h3>Add Name Here</h3>
       <form>
+        <fieldset>
+      <h3>Add Name Here</h3>
         <p>What is your name</p>
         <input type="text"/><br>
         <p>What is your role?</p>
-        <input type="radio"/> Team Lead<br>
-        <input type="radio"/> Backend<br>
-        <input type="radio"/> Frontend<br>
-        <input type="radio"/> CI/CD<br>
+        <input type="radio" name="role" value="teamlead"/> Team Lead<br>
+        <input type="radio" name="role" value="backend"/> Backend<br>
+        <input type="radio" name="role" value="frontend"/> Frontend<br>
+        <input type="radio" name="role" value="cicd"/> CI/CD<br>
         <p>Which idea do you want?</p>
         <input type="checkbox"/> Humanoid Robot Interface<br>
         <input type="checkbox"/> Mass Web Scraper<br>
