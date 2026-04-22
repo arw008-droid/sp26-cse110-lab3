@@ -13,6 +13,7 @@ h1 {
     border-width: 10px;
     border-radius: 10px;
     border-color: orange;
+    position: sticky;
     width: 20cm;
 }
 
@@ -27,15 +28,18 @@ h2 {
     border-style: inset;
     border-radius: 20px;
     width: 150mm;
+    position: relative;
 }
 
 h3 {
     color: hsla(305, 90%, 38%, 0.31); /*hsla color def*/
     background-color: #30eec7;
     border-style: groove;
-    border-width: 10px;
+    border-width: 5px;
     padding: 10px 5px 10px 5px;
     width: 1in;
+    position: absolute;
+    font-family: "Times New Roman", sans-serif;
 }
 
 li {
@@ -51,7 +55,8 @@ li {
     max-width: 5cm;
     text-decoration: underline;
     text-align: left;
-    display: inline-block;
+    display: block;
+    font-family: Arial, Helvectica;
 }
 
 p {
@@ -62,7 +67,7 @@ p {
     width: 10rem;
     text-decoration: overline;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 input {
@@ -70,3 +75,30 @@ input {
     padding: 20px 10px 20px 10px;
     width: 5vw;
 }
+
+button:hover {
+    color: red;
+}
+
+button:active {
+    color: green;
+}
+
+ul {
+    display: flex;
+}
+
+ol { 
+    display: grid;
+}
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+    
+    ol {
+        flex-direction: column;
+    }
+}
+
