@@ -2,6 +2,14 @@
     /*--color1: #e54cb9; hexdec color def*/
 }
 
+body {
+    display: grid;
+}
+
+header {
+    display: flex;
+}
+
 h1 {
     color: blue; /* color name definition*/
     background-color: #7180d4;
@@ -15,6 +23,7 @@ h1 {
     border-color: orange;
     position: sticky;
     width: 20cm;
+    align-self: center;
 }
 
 h2 {
@@ -29,6 +38,7 @@ h2 {
     border-radius: 20px;
     width: 150mm;
     position: relative;
+    justify-self: stretch;
 }
 
 h3 {
@@ -38,8 +48,9 @@ h3 {
     border-width: 5px;
     padding: 10px 5px 10px 5px;
     width: 1in;
-    position: absolute;
     font-family: "Times New Roman", sans-serif;
+    margin: auto;
+    place-self: center;
 }
 
 li {
@@ -57,6 +68,8 @@ li {
     text-align: left;
     display: block;
     font-family: Arial, Helvectica;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 p {
@@ -68,6 +81,7 @@ p {
     text-decoration: overline;
     text-align: center;
     display: inline-block;
+    font-family: "BJCree", "Playwrite NZ Guides", sans-serif;
 }
 
 input {
@@ -100,5 +114,57 @@ ol {
     ol {
         flex-direction: column;
     }
+}
+
+.highlight { 
+    background-color: yellow;
+}
+
+#emph { 
+    color: red;
+}
+
+* {
+    text-align: center;
+}
+
+a[href="https://github.com/arw008-droid"] {
+    color: purple;
+}
+
+textarea, fieldset {
+    background-color: #e54cb9;
+}
+
+.pretty li {
+    color:aquamarine;
+    background-color: aliceblue;
+
+}
+
+.listpretty ul {
+    & > li {
+        color: lavender;
+        background-color: white;
+    }
+}
+
+.butterfly ul ~ ol {
+    background-color: gray;
+    color: white;
+}
+
+.switchoff ul + h2 {
+    background-color: steelblue;
+    color: greenyellow;
+}
+
+h1.title {
+    background-color: ashgray;
+    color: orange;
+}
+
+p:has(i) {
+    color: magenta;
 }
 
